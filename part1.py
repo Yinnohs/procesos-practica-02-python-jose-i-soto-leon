@@ -15,6 +15,6 @@ if __name__ == "__main__":
     userInput =  int(input("Cuantos processos hijos debe de tener ? "))
     print('Proceso padre %s.' % os.getpid())
     for i in range (userInput):
-        p = Process(target=printProcess, args=('test',))
+        p = Process(target=processFunctionality, args=('test',))
         p.start()
 
